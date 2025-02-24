@@ -1,0 +1,53 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dark-mode *{
+  color: #FFFFFF;
+}
+
+
+.light-mode *{
+  color: #1A1A1A;
+}
+
+.pink-clr{
+  color: #E23B4B;
+}
+
+.light-mode {
+  --dark-clr: #1A1A1A;
+  --light-clr: #FFFFFF;
+  --lightgray-clr: #f2f2f2;
+  background: url(./Assets/bg-01-light.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.light-mode .links{
+  color: #1A1A1A;
+}
+
+.dark-mode .links{
+  color: #FFFFFF;
+}
+
+.dark-mode {
+  --light-clr: #1A1A1A;
+  --dark-clr: #FFFFFF;
+  background: url(./Assets/bg-01-dark.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  --lightgray-clr: #101010;
+  --darkgray-clr: #323232;
+}
