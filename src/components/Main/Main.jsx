@@ -1,23 +1,25 @@
 import React from 'react';
 import mineImg from '../../assets/mine.png';
-import mineCoverImg from '../../assets/banner-02-dark.png';
+import mineCoverDark from '../../assets/banner-02-dark.png';
+import mineCoverlight from '../../assets/banner-02-light.png';
 import facebookIcon from '../../assets/facebook.png';
 import twitterIcon from '../../assets/twitter.png';
 import whatsappIcon from '../../assets/whatsapp.png';
 import instagramIcon from '../../assets/instagram.png';
 import { Link } from 'react-router-dom';
+import './Main.css';
+import { useSelector } from 'react-redux';
 
 const Main = () => {
-  const revealForm = () => {
-    console.log("Form Revealed"); // Replace this with actual form handling
-  };
+  const darkMode = useSelector((state) => state.darkMode);
+  const mineCover = darkMode ? mineCoverDark : mineCoverlight;
 
   return (
     <div className="hero-content">
       <div className="left">
         <div className="img-box">
           <img className="mine" src={mineImg} alt="Mine" />
-          <img className="mine-cover" id="mine-cover" src={mineCoverImg} alt="Cover" />
+          <img className="mine-cover" id="mine-cover" src={mineCover} alt="Cover" />
         </div>
       </div>
 
@@ -51,8 +53,8 @@ const Main = () => {
         </div>
 
         <div className="hero-btn">
-        <li><Link className="btns" to="/message" >Message Me</Link></li>
-        <li><Link className="btns" to="/message" >Hire Me Now</Link></li>
+          <li><Link className="btns" to="/message" >Message Me</Link></li>
+          <li><Link className="btns" to="/message" >Hire Me Now</Link></li>
         </div>
       </div>
     </div>
