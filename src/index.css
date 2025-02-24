@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
 }
-*{
+
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -12,16 +15,16 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.dark-mode *{
+.dark-mode * {
   color: #FFFFFF;
 }
 
 
-.light-mode *{
+.light-mode * {
   color: #1A1A1A;
 }
 
-.pink-clr{
+.pink-clr {
   color: #E23B4B;
 }
 
@@ -34,11 +37,11 @@
   background-attachment: fixed;
 }
 
-.light-mode .links{
+.light-mode .links {
   color: #1A1A1A;
 }
 
-.dark-mode .links{
+.dark-mode .links {
   color: #FFFFFF;
 }
 
@@ -50,4 +53,28 @@
   background-attachment: fixed;
   --lightgray-clr: #101010;
   --darkgray-clr: #323232;
+}
+
+.btns {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #E23B4B;
+  color: white !important;
+  cursor: pointer;
+  border: #E23B4B;
+  border-radius: 4px;
+  margin-right: 10px;
+  transition: all 0.3s;
+}
+
+.btns:hover {
+  background: #323232;
+}
+
+.btns a {
+  color: white;
+}
+
+p{
+  text-align: justify;
 }

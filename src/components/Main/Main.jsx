@@ -29,11 +29,8 @@ const Main = () => {
             <span className="pink-clr">Hello I'm </span>
             <span>Muhammad Qasim</span>
           </h1>
-          <p>
-            I can help turn your ideas into real things! I make websites that look good and are easy to use.
-            I create beautiful and easy-to-use websites that work well on all devices. Let's make something
-            cool together.
-          </p>
+          <p>I transform ideas into sleek, user-friendly websites that are visually appealing and easy to navigate. My designs ensure a seamless experience across all devices, combining aesthetics with functionality.</p>
+          <p>Let’s build something impactful that not only looks great but also works flawlessly! </p>
         </div>
 
         <div className="hero-social">
@@ -53,8 +50,8 @@ const Main = () => {
         </div>
 
         <div className="hero-btn">
-          <li><Link className="btns" to="/message" >Message Me</Link></li>
-          <li><Link className="btns" to="/message" >Hire Me Now</Link></li>
+          <button className="btns"><Link to="/message" >Message Me</Link></button>
+          <button className="btns"><Link to="/message" >Hire Me Now</Link></button>
         </div>
       </div>
     </div>
